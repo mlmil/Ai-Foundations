@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ai Foundations 1.0 — Spark AI for Momentum Work, Inc.</title>
+<meta name="description" content="A skills-first approach to AI workforce development. Ai Foundations 1.0 — built for workers, funded by the tools already in place. WIOA eligible.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #0E0F11; font-family: 'Inter', system-ui, sans-serif; color: #F2EFE6; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  #root { width: 100%; }
+  /* Scale wrapper — scales down to fit narrow viewports, scales up to fill wide ones */
+  .scale-outer { width: 100%; overflow: hidden; }
+  .scale-inner { width: 1280px; transform-origin: top left; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="variations/v2-civic-grid.jsx"></script>
+<script type="text/babel" data-presets="react">
+function App() {
+  const outerRef = React.useRef(null);
+  const innerRef = React.useRef(null);
+  React.useEffect(() => {
+    const fit = () => {
+      if (!outerRef.current || !innerRef.current) return;
+      const w = outerRef.current.clientWidth;
+      // Scale to fill width — up to a max of 1.4x (so it doesn't get absurd on 4K monitors)
+      const scale = Math.min(1.4, w / 1280);
+      innerRef.current.style.transform = `scale(${scale})`;
+      const h = innerRef.current.getBoundingClientRect().height;
+      outerRef.current.style.height = h + 'px';
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(document.body);
+    window.addEventListener('resize', fit);
+    const t1 = setTimeout(fit, 200);
+    const t2 = setTimeout(fit, 800);
+    return () => { ro.disconnect(); window.removeEventListener('resize', fit); clearTimeout(t1); clearTimeout(t2); };
+  }, []);
+  return (
+    <div ref={outerRef} className="scale-outer">
+      <div ref={innerRef} className="scale-inner">
+        <window.V2 dark={true} />
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>
