@@ -164,14 +164,14 @@ const V2 = ({ dark = false } = {}) => {
 
       {/* GOALS */}
       <div style={{ padding: '72px 56px', borderBottom: `1px solid ${T.rule}` }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 24, marginBottom: 40 }}>
-          <div style={{ gridColumn: '1 / 4' }}>
-            <Label>§ 01 — Core Principles</Label>
-            <h2 style={{ fontSize: 32, lineHeight: 1.05, letterSpacing: '-0.02em', margin: '12px 0 0', fontWeight: 500 }}>
-              The Core Principles.
-            </h2>
-          </div>
-          <div style={{ gridColumn: '4 / 13', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 40 }}>
+          <h2 style={{ fontSize: 32, lineHeight: 1.05, letterSpacing: '-0.02em', margin: 0, fontWeight: 500 }}>
+            The Core Principles.
+          </h2>
+          <Label>§ 01 — Core Principles</Label>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 24 }}>
+          <div style={{ gridColumn: '1 / 13', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
             {goals.map((g, i) => (
               <div key={i} style={{ background: T.cardBg, border: `1px solid ${T.rule}`, padding: 28, display: 'flex', flexDirection: 'column', gap: 18 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
