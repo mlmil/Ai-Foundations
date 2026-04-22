@@ -87,7 +87,7 @@ const V2 = ({ dark = false } = {}) => {
           <Label>Modules</Label>
           <Label>Tracks</Label>
           <Label>Funding</Label>
-          <a href=\"#student-login\" style={{
+          <a href="#student-login" style={{
             fontFamily: mono,
             fontSize: 11,
             letterSpacing: '0.08em',
