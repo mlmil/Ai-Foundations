@@ -87,8 +87,6 @@ const V2 = ({ dark = false } = {}) => {
           <Label>Modules</Label>
           <Label>Tracks</Label>
           <Label>Funding</Label>
-          <Label><a href=\"/Volumes/VADER/Cowork Projects/Spark.Ai/Manifestos/ai manifesto.pdf\" style={{color: 'inherit', textDecoration: 'none'}}>Ethics</a></Label>
-          <Label><a href=\"/Volumes/VADER/Cowork Projects/Spark.Ai/Manifestos/age of intelligence policy.pdf\" style={{color: 'inherit', textDecoration: 'none'}}>Policy</a></Label>
           <a href=\"#student-login\" style={{
             fontFamily: mono,
             fontSize: 11,
