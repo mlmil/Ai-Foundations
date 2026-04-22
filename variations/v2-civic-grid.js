@@ -309,6 +309,8 @@ const V2 = ({ dark = false } = {}) => {
       <div style={{ padding: '40px 56px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: mono, fontSize: 11, letterSpacing: '0.05em', color: T.muted }}>
         <div>Spark Ai · 2026</div>
         <div style={{ display: 'flex', gap: 32 }}>
+          <a href=\"#\" style={{ color: T.muted }}>Statement of Ethics</a>
+          <a href=\"#\" style={{ color: T.muted }}>OpenAI Age of Intelligence Policy</a>
           <span>Mike Miller</span>
           <span>mike@sparkai805.com</span>
           <span>818.426.2710</span>
