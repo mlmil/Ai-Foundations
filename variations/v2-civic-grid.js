@@ -87,7 +87,9 @@ const V2 = ({ dark = false } = {}) => {
           <Label>Modules</Label>
           <Label>Tracks</Label>
           <Label>Funding</Label>
-          <a href="#student-login" style={{
+          <Label><a href=\"/Volumes/VADER/Cowork Projects/Spark.Ai/Manifestos/ai manifesto.pdf\" style={{color: 'inherit', textDecoration: 'none'}}>Ethics</a></Label>
+          <Label><a href=\"/Volumes/VADER/Cowork Projects/Spark.Ai/Manifestos/age of intelligence policy.pdf\" style={{color: 'inherit', textDecoration: 'none'}}>Policy</a></Label>
+          <a href=\"#student-login\" style={{
             fontFamily: mono,
             fontSize: 11,
             letterSpacing: '0.08em',
@@ -309,8 +311,6 @@ const V2 = ({ dark = false } = {}) => {
       <div style={{ padding: '40px 56px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: mono, fontSize: 11, letterSpacing: '0.05em', color: T.muted }}>
         <div>Spark Ai · 2026</div>
         <div style={{ display: 'flex', gap: 32 }}>
-          <a href=\"#\" style={{ color: T.muted }}>Statement of Ethics</a>
-          <a href=\"#\" style={{ color: T.muted }}>OpenAI Age of Intelligence Policy</a>
           <span>Mike Miller</span>
           <span>mike@sparkai805.com</span>
           <span>818.426.2710</span>
