@@ -171,7 +171,7 @@ const V2 = ({ dark = false } = {}) => {
               The Core Principles.
             </h2>
           </div>
-          <div style={{ gridColumn: '5 / 13', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+          <div style={{ gridColumn: '4 / 13', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
             {goals.map((g, i) => (
               <div key={i} style={{ background: T.cardBg, border: `1px solid ${T.rule}`, padding: 28, display: 'flex', flexDirection: 'column', gap: 18 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
