@@ -87,6 +87,22 @@ const V2 = ({ dark = false } = {}) => {
           <Label>Modules</Label>
           <Label>Tracks</Label>
           <Label>Funding</Label>
+          <a href="manifestos/ai%20manifesto.pdf" target="_blank" style={{
+            fontFamily: mono,
+            fontSize: 11,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: T.muted,
+            textDecoration: 'none',
+          }}>Ethics</a>
+          <a href="manifestos/age%20of%20intelligence%20policy.pdf" target="_blank" style={{
+            fontFamily: mono,
+            fontSize: 11,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: T.muted,
+            textDecoration: 'none',
+          }}>Policy</a>
           <a href="#student-login" style={{
             fontFamily: mono,
             fontSize: 11,
