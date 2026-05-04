@@ -103,6 +103,14 @@ const V2 = ({ dark = false } = {}) => {
             color: T.muted,
             textDecoration: 'none',
           }}>Policy</a>
+          <a href="https://mlmil.github.io/mike-miller-bio/" target="_blank" style={{
+            fontFamily: mono,
+            fontSize: 11,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: T.amber,
+            textDecoration: 'none',
+          }}>Mike's Bio</a>
           <a href="#student-login" style={{
             fontFamily: mono,
             fontSize: 11,
